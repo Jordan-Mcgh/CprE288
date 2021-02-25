@@ -9,13 +9,15 @@ CMD_SRCS += \
 ../tm4c123gh6pm.cmd 
 
 LIB_SRCS += \
+../libcybotFindObjects.lib \
 ../libcybotUART.lib 
 
 C_SRCS += \
 ../Timer.c \
 ../button.c \
-../lab3_template.c \
 ../lcd.c \
+../main.c \
+../movement.c \
 ../open_interface.c \
 ../resetSimulation.c \
 ../tm4c123gh6pm_startup_ccs.c 
@@ -23,8 +25,9 @@ C_SRCS += \
 C_DEPS += \
 ./Timer.d \
 ./button.d \
-./lab3_template.d \
 ./lcd.d \
+./main.d \
+./movement.d \
 ./open_interface.d \
 ./resetSimulation.d \
 ./tm4c123gh6pm_startup_ccs.d 
@@ -32,8 +35,9 @@ C_DEPS += \
 OBJS += \
 ./Timer.obj \
 ./button.obj \
-./lab3_template.obj \
 ./lcd.obj \
+./main.obj \
+./movement.obj \
 ./open_interface.obj \
 ./resetSimulation.obj \
 ./tm4c123gh6pm_startup_ccs.obj 
@@ -41,8 +45,9 @@ OBJS += \
 OBJS__QUOTED += \
 "Timer.obj" \
 "button.obj" \
-"lab3_template.obj" \
 "lcd.obj" \
+"main.obj" \
+"movement.obj" \
 "open_interface.obj" \
 "resetSimulation.obj" \
 "tm4c123gh6pm_startup_ccs.obj" 
@@ -50,8 +55,9 @@ OBJS__QUOTED += \
 C_DEPS__QUOTED += \
 "Timer.d" \
 "button.d" \
-"lab3_template.d" \
 "lcd.d" \
+"main.d" \
+"movement.d" \
 "open_interface.d" \
 "resetSimulation.d" \
 "tm4c123gh6pm_startup_ccs.d" 
@@ -59,8 +65,9 @@ C_DEPS__QUOTED += \
 C_SRCS__QUOTED += \
 "../Timer.c" \
 "../button.c" \
-"../lab3_template.c" \
 "../lcd.c" \
+"../main.c" \
+"../movement.c" \
 "../open_interface.c" \
 "../resetSimulation.c" \
 "../tm4c123gh6pm_startup_ccs.c" 
